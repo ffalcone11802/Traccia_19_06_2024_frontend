@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import AlbumDetails from './components/AlbumDetails'
 import AudioPlayer from './components/AudioPlayer'
@@ -9,13 +8,7 @@ import NoPage from "./pages/NoPage"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 
-export default function App() {
-  const [item, setItem] = useState(null)
-  
-  const updateItem = (item) => {
-    setItem(item)
-  }
-  
+export default function App() {  
   return (
     <BrowserRouter>
       <div id="app">
@@ -24,11 +17,11 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/library" element={<Library />} />
-            <Route path="/album/:id" element={<AlbumDetails updateItem={updateItem} />} />
+            <Route path="/album/:id" element={<AlbumDetails />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </main>
-        <AudioPlayer item={item}/>
+        <AudioPlayer />
       </div>
     </BrowserRouter>
   )
