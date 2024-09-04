@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function AudioPlayer({item}) {
+export default function AudioPlayer() {
   const [level, setLevel] = useState(100)
 
   const handleSlider = (e) => {
@@ -10,15 +10,11 @@ export default function AudioPlayer({item}) {
   return (
     <div id="audio-player-container">
         <div id="current-song">
-          {item && 
-            <>
-              <img className="album" src={item.artwork} />
-              <div className="song-info">
-                  <h1>{item.item.title}</h1>
-                  <h2>{item.subtitle}</h2>
-              </div>
-            </>
-          }
+            <img className="album" src="" />
+            <div className="song-info">
+                <h1>Title</h1>
+                <h2>Subtitle</h2>
+            </div>
         </div>
         <div id="audio-player">
             <audio src="song.mp3" preload="metadata" loop></audio>
@@ -32,7 +28,7 @@ export default function AudioPlayer({item}) {
             <div id="track-slider-container">
                 <span id="current-time" className="time">0:00</span>
                 <input type="range" id="seek-slider" max="100" value="0" />
-                <span id="duration" className="time">{item ? item.item.length : 0}:00</span>
+                <span id="duration" className="time">0:00</span>
             </div>
         </div>
         <div id="volume-controller">
