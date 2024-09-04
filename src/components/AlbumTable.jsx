@@ -1,6 +1,6 @@
 import AlbumRow from "./AlbumRow"
 
-export default function AlbumTable({data, changeItem}) {
+export default function AlbumTable({data}) {
   return(
     <table id="albumDetails">
       <tbody>
@@ -12,7 +12,7 @@ export default function AlbumTable({data, changeItem}) {
         <tr className="data-row"><td>{data.subtitle}</td></tr>
         <tr className="data-row"><td>{data.date}</td></tr>
         <tr className="data-row"><th><h3>Tracce</h3></th></tr>
-        {data.items?.map(i => <AlbumRow item={i} artwork={data.artwork} subtitle={data.subtitle} changeItem={changeItem}/>)}
+        {data.items?.map(i => <AlbumRow item={i} artwork={data.artwork} subtitle={data.subtitle}/>)}
       </tbody>
     </table>
   )
