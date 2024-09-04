@@ -1,0 +1,57 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "type": "Playlist",
+      "title": "Brani che ti piacciono",
+      "subtitle": "Angela",
+      "date": 2024,
+      "artwork": "https://misc.scdn.co/liked-songs/liked-songs-300.png",
+      "items": []
+    },
+    {
+      "id": 2,
+      "type": "Album",
+      "title": "RELAX",
+      "subtitle": "Calcutta",
+      "date": 2023,
+      "artwork": "https://i.scdn.co/image/ab67616d00001e028acaa7da2fb43a4038d962c6",
+      "items": [
+        {
+          "title": "2minuti",
+          "length": 2
+        },
+        {
+          "title": "Loneliness",
+          "length": 3
+        },
+        {
+          "title": "Controtempo",
+          "length": 4
+        },
+        {
+          "title": "SSD",
+          "length": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Album",
+      "title": "Evergreen",
+      "subtitle": "Calcutta",
+      "date": 2018,
+      "artwork": "https://i.scdn.co/image/ab67616d0000b2732a7922dc3a775970e2eb96dc",
+      "items": [
+        {
+          "title": "Paracetamolo",
+          "length": 2
+        },
+        {
+          "title": "Pesto",
+          "length": 3
+        }
+      ]
+    }
+  ]
+}
