@@ -1,16 +1,11 @@
 import {useNavigate} from 'react-router-dom'
 
 
-export default function LibraryRow({title, subtitle, type, date, items, artwork, id}) {
+export default function LibraryRow({title, subtitle, type, date, items, artwork}) {
   const navigate = useNavigate()
-
-  const visualizeAlbum = () => {
-    const URL = "../album/"+id
-    navigate(URL)
-  }
   
   return (
-    <tr onClick={visualizeAlbum}><td>
+    <tr><td>
       <div className="library-item">
       <img className="album" src={artwork} />
       <div className="description">
